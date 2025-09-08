@@ -42,11 +42,11 @@ Si alguno del equipo aún no tiene el editor, acá van pasos rápidos para insta
 
 Pasos para Windows (rápido):
 
-1. Abrí la página de descargas y elegí la versión "Standard" para Windows (64-bit).
-2. Tenés dos opciones comunes:
+- Abrí la página de descargas y elegí la versión "Standard" para Windows (64-bit).
+- Tenés dos opciones comunes:
 	- Ejecutable / instalador (.exe / .msi): ejecutalo y seguí el asistente.
 	- ZIP portátil: descargalo, extraelo y ejecutá `Godot.exe` (no requiere instalación).
-3. Una vez abierto Godot, elegí "Project → Open" o "Import" y seleccioná la carpeta del proyecto que contiene `project.godot` (la carpeta `umita`).
+- Una vez abierto Godot, elegí "Project → Open" o "Import" y seleccioná la carpeta del proyecto que contiene `project.godot` (la carpeta `umita`).
 
 6. Abrí Godot (recomendado Godot 4.x) y elegí "Open" o "Import" para abrir `project.godot` dentro de la carpeta `umita`.
 
