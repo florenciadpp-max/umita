@@ -12,19 +12,19 @@ IMPORTANTE: evitemos la opción de "Download ZIP" en GitHub — descargando el Z
 
 Opción recomendada — Con Git (o GitHub Desktop) en Windows
 
-1. Instalar Git:
-	- Descargá "Git for Windows" desde https://git-scm.com/ y ejecutá el instalador (aceptá las opciones por defecto).
-	- Si preferís interfaz gráfica en lugar de la terminal, podés instalar "GitHub Desktop" desde https://desktop.github.com/ (es más amigable, pero es ideal tener ambas).
+### 1. Instalar Git
 
-2. Abrí PowerShell (tecla Windows → escribí "PowerShell" → Enter) o abrí GitHub Desktop.
+- Descargá "Git for Windows" desde https://git-scm.com/ y ejecutá el instalador (aceptá las opciones por defecto).
+- Si preferís interfaz gráfica en lugar de la terminal, podés instalar "GitHub Desktop" desde https://desktop.github.com/ (es más amigable, pero es ideal tener ambas).
 
-3. En PowerShell, cambiá a la carpeta donde quieras guardar el proyecto. Ejemplo:
+### 2. Abrí PowerShell (tecla Windows → escribí "PowerShell" → Enter) o abrí GitHub Desktop.
 
+### 3. En PowerShell, cambiá a la carpeta donde quieras guardar el proyecto. Ejemplo:
 ```powershell
 cd C:\Users\TuUsuario\Documentos\Godot\Proyectos
 ```
 
-4. Clonar el repositorio (si usás PowerShell):
+### 4. Clonar el repositorio (si usás PowerShell)
 
 ```powershell
 git clone https://github.com/federicohermo/umita.git
@@ -33,7 +33,7 @@ cd umita
 
 Si usás GitHub Desktop: abrí la app, elegí "File → Clone repository", pegá la URL `https://github.com/federicohermo/umita.git` y cloná en la carpeta que prefieras.
 
-5. Si no tenés Godot instalado — cómo descargarlo y ejecutarlo
+### 5. Si no tenés Godot instalado — cómo descargarlo y ejecutarlo
 
 Si alguno del equipo aún no tiene el editor, acá van pasos rápidos para instalar/ejecutar Godot.
 
@@ -48,9 +48,9 @@ Pasos para Windows (rápido):
 	- ZIP portátil: descargalo, extraelo y ejecutá `Godot.exe` (no requiere instalación).
 - Una vez abierto Godot, elegí "Project → Open" o "Import" y seleccioná la carpeta del proyecto que contiene `project.godot` (la carpeta `umita`).
 
-6. Abrí Godot (recomendado Godot 4.x) y elegí "Open" o "Import" para abrir `project.godot` dentro de la carpeta `umita`.
+### 6. Abrí Godot (recomendado Godot 4.x) y elegí "Open" o "Import" para abrir `project.godot` dentro de la carpeta `umita`.
 
-7. Abrí la escena de prueba `scenes/levels/level.tscn` y presioná Ejecutar (F5).
+### 7. Abrí la escena de prueba `scenes/levels/level.tscn` y presioná Ejecutar (F5).
 
 ---
 
