@@ -2,8 +2,6 @@
 
 Este repositorio contiene una pequeña escena de ejemplo para Godot (v4.x) con un jugador y un controlador de cámara.
 
-# Umita — guía rápida para el equipo (diseño, audio y arte)
-
 Acá explico cómo abrir, probar el proyecto en Godot y dónde colocar los assets.
 
 ## Abrir el proyecto 
@@ -35,9 +33,24 @@ cd umita
 
 Si usás GitHub Desktop: abrí la app, elegí "File → Clone repository", pegá la URL `https://github.com/federicohermo/umita.git` y cloná en la carpeta que prefieras.
 
-5. Abrí Godot (recomendado Godot 4.x) y elegí "Open" o "Import" para abrir `project.godot` dentro de la carpeta `umita`.
+5. Si no tenés Godot instalado — cómo descargarlo y ejecutarlo
 
-6. Abrí la escena de prueba `scenes/levels/level.tscn` y presioná Ejecutar (F5).
+Si alguno del equipo aún no tiene el editor, acá van pasos rápidos para instalar/ejecutar Godot.
+
+- Versión recomendada: Godot 4.4 (cualquier parche 4.4.x está bien). Evitar Godot 3.x o versiones mayores que no sean 4.x porque son incompatibles con este proyecto.
+- Página oficial de descargas: https://godotengine.org/download
+
+Pasos para Windows (rápido):
+
+1. Abrí la página de descargas y elegí la versión "Standard" para Windows (64-bit).
+2. Tenés dos opciones comunes:
+	- Ejecutable / instalador (.exe / .msi): ejecutalo y seguí el asistente.
+	- ZIP portátil: descargalo, extraelo y ejecutá `Godot.exe` (no requiere instalación).
+3. Una vez abierto Godot, elegí "Project → Open" o "Import" y seleccioná la carpeta del proyecto que contiene `project.godot` (la carpeta `umita`).
+
+6. Abrí Godot (recomendado Godot 4.x) y elegí "Open" o "Import" para abrir `project.godot` dentro de la carpeta `umita`.
+
+7. Abrí la escena de prueba `scenes/levels/level.tscn` y presioná Ejecutar (F5).
 
 ---
 
