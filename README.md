@@ -53,9 +53,13 @@ Pasos para Windows (rápido):
 	- ZIP portátil: descargalo, extraelo y ejecutá `Godot.exe` (no requiere instalación).
 - Una vez abierto Godot, elegí "Project → Open" o "Import" y seleccioná la carpeta del proyecto que contiene `project.godot` (la carpeta `umita`).
 
-### 6. Abrí Godot (recomendado Godot 4.x) y elegí "Open" o "Import" para abrir `project.godot` dentro de la carpeta `umita`.
+### 6. Abrir Godot
 
-### 7. Abrí la escena de prueba `scenes/levels/level.tscn` y presioná Ejecutar (F5).
+- Elegí "Open" o "Import" para abrir `project.godot` dentro de la carpeta `umita`.
+
+### 7. Abrir la escena
+
+- Abrí la escena de prueba `scenes/levels/level.tscn` y presioná Ejecutar (F5) o presionar en el botón con el ícono de play en la esquina superior derecha de la interfaz de usuario.
 
 ---
 
