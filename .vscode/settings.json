@@ -1,4 +1,5 @@
 {
     "godotTools.editorPath.godot4": "c:\\Users\\fede_\\OneDrive\\Documentos\\Godot\\Godot_v4.4.1-stable_win64.exe",
-    "github.gitAuthentication": false
+    "github.gitAuthentication": true,
+    "git.terminalAuthentication": true
 }
