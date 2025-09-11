@@ -17,12 +17,17 @@ Opción recomendada — Con Git (o GitHub Desktop) en Windows
 - Descargá "Git for Windows" desde https://git-scm.com/ y ejecutá el instalador (aceptá las opciones por defecto).
 - Si preferís interfaz gráfica en lugar de la terminal, podés instalar "GitHub Desktop" desde https://desktop.github.com/ (es más amigable, pero es ideal tener ambas).
 
-### 2. Abrí PowerShell (tecla Windows → escribí "PowerShell" → Enter) o abrí GitHub Desktop.
+### 2. Abrir PowerShell 
 
-### 3. En PowerShell, cambiá a la carpeta donde quieras guardar el proyecto. Ejemplo:
-```powershell
-cd C:\Users\TuUsuario\Documentos\Godot\Proyectos
-```
+- Con la siguiente secuencia: tecla Windows → escribí "PowerShell" → Enter. También podemos abrir GitHub Desktop.
+
+### 3. En PowerShell
+
+- Cambiá a la carpeta donde quieras guardar el proyecto. 
+    Ejemplo:
+    ```powershell
+    cd C:\Users\TuUsuario\Documentos\Godot\Proyectos
+    ```
 
 ### 4. Clonar el repositorio (si usás PowerShell)
 
@@ -48,9 +53,13 @@ Pasos para Windows (rápido):
 	- ZIP portátil: descargalo, extraelo y ejecutá `Godot.exe` (no requiere instalación).
 - Una vez abierto Godot, elegí "Project → Open" o "Import" y seleccioná la carpeta del proyecto que contiene `project.godot` (la carpeta `umita`).
 
-### 6. Abrí Godot (recomendado Godot 4.x) y elegí "Open" o "Import" para abrir `project.godot` dentro de la carpeta `umita`.
+### 6. Abrir Godot
 
-### 7. Abrí la escena de prueba `scenes/levels/level.tscn` y presioná Ejecutar (F5).
+- Elegí "Open" o "Import" para abrir `project.godot` dentro de la carpeta `umita`.
+
+### 7. Abrir la escena
+
+- Abrí la escena de prueba `scenes/levels/level.tscn` y presioná Ejecutar (F5) o presionar en el botón con el ícono de play en la esquina superior derecha de la interfaz de usuario.
 
 ---
 
