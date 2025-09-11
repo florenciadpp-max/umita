@@ -1,5 +1,7 @@
 extends CharacterBody3D
 
+@onready var animated_sprite: AnimatedSprite3D = $AnimatedSprite3D
+
 # Velocidad de movimiento (unidades por segundo).
 # Ajusta este valor desde el editor si querés que el personaje vaya más rápido o más lento.
 @export var base_speed := 10.0
@@ -21,6 +23,7 @@ func _physics_process(delta: float) -> void:
 	# 'delta' es el tiempo en segundos desde la última llamada: se usa para que el
 	# movimiento sea consistente sin importar la velocidad de la máquina.
 	complex_movement(delta)
+	set_animation()
 	# Aplica la velocidad calculada al cuerpo y gestiona colisiones automáticamente.
 	move_and_slide()
 
@@ -30,7 +33,6 @@ func complex_movement(delta: float) -> void:
 	# 2) Rotamos esa entrada para que esté alineada con la cámara,
 	#    así "adelante" siempre será hacia donde la cámara mira.
 	movement_input = Input.get_vector("left", "right", "forward", "backward").rotated(-camera.global_rotation.y)
-	
 	# vel_2d contiene la velocidad actual en el plano horizontal (X,Z).
 	var vel_2d = Vector2(velocity.x, velocity.z)
 
@@ -67,3 +69,16 @@ func complex_movement(delta: float) -> void:
 # Usamos esto para combinar la velocidad horizontal con la velocidad vertical y evitar repetir código.
 func vec2_to_vec3(v2: Vector2, y: float) -> Vector3:
 	return Vector3(v2.x, y, v2.y)
+
+func set_animation() -> void:
+	var pressing_left := Input.is_action_pressed("left")
+	var pressing_right := Input.is_action_pressed("right")
+	var pressing_backward := Input.is_action_pressed("backward")
+
+	if (pressing_left or pressing_right):
+		animated_sprite.play("sidewalk")
+		animated_sprite.flip_h = pressing_right
+	elif pressing_backward:
+		animated_sprite.play("backwalk")
+	else:
+		animated_sprite.play("idle")
