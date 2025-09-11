@@ -74,7 +74,8 @@ func set_animation() -> void:
 	var pressing_left := Input.is_action_pressed("left")
 	var pressing_right := Input.is_action_pressed("right")
 	var pressing_backward := Input.is_action_pressed("backward")
-
+	print(Vector2(velocity.x, velocity.z).length())
+	
 	if (pressing_left or pressing_right):
 		animated_sprite.play("sidewalk")
 		animated_sprite.flip_h = pressing_right
