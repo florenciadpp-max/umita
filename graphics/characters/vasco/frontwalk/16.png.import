@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5uet0lent8f8"
-path="res://.godot/imported/16.png-e17865f3a8dd23dfc65243861bebbabc.ctex"
+path="res://.godot/imported/16.png-bbeceea39800e963ba6e7749dacdbece.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/characters/frontwalk/16.png"
-dest_files=["res://.godot/imported/16.png-e17865f3a8dd23dfc65243861bebbabc.ctex"]
+source_file="res://graphics/characters/vasco/frontwalk/16.png"
+dest_files=["res://.godot/imported/16.png-bbeceea39800e963ba6e7749dacdbece.ctex"]
 
 [params]
 

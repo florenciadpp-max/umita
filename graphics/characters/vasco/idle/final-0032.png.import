@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvgfu3knx7u31"
-path.s3tc="res://.godot/imported/03.png-d42496eb1de537a1330697d8d78fbb3e.s3tc.ctex"
+uid="uid://bh01472qx3bqa"
+path.s3tc="res://.godot/imported/final-0032.png-17bd97df03c1dc5d3421f2e20975a013.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://graphics/characters/sidewalk/03.png"
-dest_files=["res://.godot/imported/03.png-d42496eb1de537a1330697d8d78fbb3e.s3tc.ctex"]
+source_file="res://graphics/characters/vasco/idle/final-0032.png"
+dest_files=["res://.godot/imported/final-0032.png-17bd97df03c1dc5d3421f2e20975a013.s3tc.ctex"]
 
 [params]
 
