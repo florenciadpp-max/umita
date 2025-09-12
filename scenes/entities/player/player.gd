@@ -35,6 +35,8 @@ func complex_movement(delta: float) -> void:
 	movement_input = Input.get_vector("left", "right", "forward", "backward").rotated(-camera.global_rotation.y)
 	# vel_2d contiene la velocidad actual en el plano horizontal (X,Z).
 	var vel_2d = Vector2(velocity.x, velocity.z)
+	
+	var acceleration := 4.0 * delta
 
 	# Comprobamos si el jugador está corriendo (tecla "run" presionada).
 	var is_running = Input.is_action_pressed("run")
@@ -42,10 +44,10 @@ func complex_movement(delta: float) -> void:
 	if movement_input != Vector2.ZERO:
 		# Si hay entrada de la tecla "run": calculamos la velocidad objetivo (camina o corre).
 		var speed = run_speed if is_running else base_speed
-
+		
 		# Si hay entrada: aplicamos una aceleración suave.
 		# Multiplicamos por 'delta' para que la aceleración dependa del tiempo.
-		vel_2d += movement_input * speed * delta
+		vel_2d += movement_input * speed * acceleration
 		
 		# Limitamos la magnitud para que no supere la velocidad máxima (speed).
 		vel_2d = vel_2d.limit_length(speed)
@@ -56,7 +58,7 @@ func complex_movement(delta: float) -> void:
 	else:
 		# Si no hay entrada: desaceleramos suavemente hacia cero.
 		# Esto evita detenerse de golpe y da una sensación más natural.
-		vel_2d = vel_2d.move_toward(Vector2.ZERO, base_speed * 4.0 * delta)
+		vel_2d = vel_2d.move_toward(Vector2.ZERO, base_speed * 4.0 * acceleration)
 		velocity = vec2_to_vec3(vel_2d, velocity.y)
 
 # Alternativa simple (sin aceleración). 
