@@ -1,5 +1,6 @@
 extends CharacterBody3D
 
+# Referencia al nodo AnimatedSprite3D para cambiar la animación.
 @onready var animated_sprite: AnimatedSprite3D = $AnimatedSprite3D
 
 # Velocidad de movimiento (unidades por segundo).
@@ -23,7 +24,10 @@ func _physics_process(delta: float) -> void:
 	# 'delta' es el tiempo en segundos desde la última llamada: se usa para que el
 	# movimiento sea consistente sin importar la velocidad de la máquina.
 	complex_movement(delta)
+
+	# Actualiza la animación según la tecla presionada.
 	set_animation()
+
 	# Aplica la velocidad calculada al cuerpo y gestiona colisiones automáticamente.
 	move_and_slide()
 
@@ -61,8 +65,8 @@ func complex_movement(delta: float) -> void:
 		vel_2d = vel_2d.move_toward(Vector2.ZERO, base_speed * 4.0 * acceleration)
 		velocity = vec2_to_vec3(vel_2d, velocity.y)
 
-# Alternativa simple (sin aceleración). 
-# Mueve al jugador instantáneamente según la entrada de la cámara.
+# Alternativa simple de movimiento (sin aceleración). 
+# Rota al jugador instantáneamente según la entrada de la cámara.
 # func simple_movement(delta: float) -> void:
 #     movement_input = Input.get_vector("left", "right", "forward", "backward").rotated(-camera.global_rotation.y)
 #     velocity = Vector3(movement_input.x, 0, movement_input.y) * base_speed
@@ -72,15 +76,28 @@ func complex_movement(delta: float) -> void:
 func vec2_to_vec3(v2: Vector2, y: float) -> Vector3:
 	return Vector3(v2.x, y, v2.y)
 
+# Función XOR para booleanos (no existe en GDScript).
+# Devuelve verdadero si uno y solo uno de los dos valores es verdadero.
+func xor(b1: bool, b2: bool) -> bool:
+	return (b1 and not b2) or (b2 and not b1)
+
+# Cambia la animación según la tecla presionada.
 func set_animation() -> void:
 	var pressing_left := Input.is_action_pressed("left")
 	var pressing_right := Input.is_action_pressed("right")
 	var pressing_backward := Input.is_action_pressed("backward")
 	
-	if (pressing_left or pressing_right):
+	# Si presionamos izquierda o derecha (pero no ambas), 
+	# reproducimos "sidewalk" (caminar de lado)
+	# y volteamos el sprite si es necesario.
+	if (xor(pressing_left, pressing_right)):
 		animated_sprite.play("sidewalk")
 		animated_sprite.flip_h = pressing_right
+	# Si presionamos atrás, reproducimos "backwalk" (caminar hacia atrás).
+	# Esto tiene prioridad sobre "sidewalk" si se presionan ambas.
 	elif pressing_backward:
 		animated_sprite.play("backwalk")
+	# Si no se presiona ninguna tecla o presionamos izquierda y derecha a la vez, 
+	# reproducimos "idle" (quieto).
 	else:
 		animated_sprite.play("idle")
