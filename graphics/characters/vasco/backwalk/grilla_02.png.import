@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cew0iw36ol2r1"
-path="res://.godot/imported/grilla_02.png-1f9cc88d8fdb8148247726eb3c805bd1.ctex"
+path="res://.godot/imported/grilla_02.png-202f0d3fb41008b3ddd825c5cea048ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/characters/vasco/frontwalk/grilla_02.png"
-dest_files=["res://.godot/imported/grilla_02.png-1f9cc88d8fdb8148247726eb3c805bd1.ctex"]
+source_file="res://graphics/characters/vasco/backwalk/grilla_02.png"
+dest_files=["res://.godot/imported/grilla_02.png-202f0d3fb41008b3ddd825c5cea048ab.ctex"]
 
 [params]
 

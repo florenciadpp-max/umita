@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lj52gp7mtys0"
-path="res://.godot/imported/10.png-93a44e5c2ba55bc1d90281d39d1569d5.ctex"
+path="res://.godot/imported/10.png-9c4c0f5ca29d5feffc6b25635542f416.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/characters/vasco/frontwalk/10.png"
-dest_files=["res://.godot/imported/10.png-93a44e5c2ba55bc1d90281d39d1569d5.ctex"]
+source_file="res://graphics/characters/vasco/backwalk/10.png"
+dest_files=["res://.godot/imported/10.png-9c4c0f5ca29d5feffc6b25635542f416.ctex"]
 
 [params]
 

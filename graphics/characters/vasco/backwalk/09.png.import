@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6wlv386mokgu"
-path.s3tc="res://.godot/imported/09.png-7b5ce3df0768582336a6880b87c00da5.s3tc.ctex"
+path.s3tc="res://.godot/imported/09.png-b1a99f9d64168c1ecf29986d791e898c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://graphics/characters/vasco/frontwalk/09.png"
-dest_files=["res://.godot/imported/09.png-7b5ce3df0768582336a6880b87c00da5.s3tc.ctex"]
+source_file="res://graphics/characters/vasco/backwalk/09.png"
+dest_files=["res://.godot/imported/09.png-b1a99f9d64168c1ecf29986d791e898c.s3tc.ctex"]
 
 [params]
 
