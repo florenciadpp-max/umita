@@ -20,7 +20,7 @@ func _input(event: InputEvent) -> void:
 # Rota la cámara usando un Vector2 (x = horizontal, y = vertical).
 # - v.x  cambia la rotación horizontal (giro alrededor de Y).
 # - v.y  cambia la rotación vertical (inclinación alrededor de X).
-# Aplicamos un clamp a la rotación X para que la cámara no se nos de vuelta.
+# Aplicamos un clamp a la rotación X para que la cámara no de un giro de 360 grados.
 # Tengamos en cuenta que al restar v.y invertimos el movimiento vertical del mouse
 # por lo que min_limit_x es el límite superior y max_limit_x el límite inferior.
 func rotate_from_vector(v: Vector2):
